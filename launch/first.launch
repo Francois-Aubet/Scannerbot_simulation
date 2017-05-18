@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find scannerbot_gazebo)/worlds/smallbot.world"/>
+    <!-- more default parameters can be changed here scannerbot hokuyoOnFloor smallbot -->
+  </include>
+
+
+  <!-- Spawn the robot into Gazebo
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find scannerbot_gazebo)/models/my_robot/model.sdf -sdf -model my_second_robot" /> -->
+
+
+</launch>
